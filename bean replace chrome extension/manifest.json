@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2, //version of chrome p much 
+	"name": "can of beans",
+	"version": "0.1",
+	"web_accessible_resources": [
+			//images
+			 "beans/*.jpg"
+			],
+	"content_scripts": [
+		{
+			"matches": [
+			 "<all_urls>"
+			],
+			"js": ["beans.js"]
+			
+		}
+		
+	],
+	
+	"background": {
+		"scripts": ["background.js"]
+		},
+		"browser_action": {
+			"default_icon": "trex.jpg"
+		}
+		
+	
+	
+}
